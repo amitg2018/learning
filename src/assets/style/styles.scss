@@ -5,7 +5,36 @@ body, html {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'proxima-nova', sans-serif !important;
+  font-weight: 400;
+  font-size: 14px;
+  overflow: hidden;
+  line-height: 1;
+  box-sizing: border-box;
 }
 body {
   background: #fff;
+}
+
+.header {
+  background: #f7f7f7;
+  border-bottom: 1px solid #e2e2e2;
+  box-sizing: border-box;
+  padding: 0 20px;
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 20px;
+  font-weight: 500;
+  color: #0f7088;
+  &:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-flex;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #0f7088;
+  }
 }

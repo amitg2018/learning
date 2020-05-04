@@ -1,11 +1,14 @@
 <template>
   <div class="home">
-    <img
-      alt="Vue logo"
-      src="../assets/images/logo.png"
-      style="max-width: 100px"
-    />
-    Home
+    <div class="header">
+      <img
+        alt="Vue logo"
+        src="../assets/images/logo.png"
+        style="max-width: 50px"
+      />
+      Home
+    </div>
+
     <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
   </div>
 </template>
