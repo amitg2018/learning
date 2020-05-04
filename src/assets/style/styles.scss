@@ -24,17 +24,38 @@ body {
   display: flex;
   height: 60px;
   align-items: center;
-  justify-content: flex-start;
-  font-size: 20px;
-  font-weight: 500;
-  color: #0f7088;
-  &:before {
-    content: '';
-    margin-right: 10px;
-    display: inline-flex;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #0f7088;
+  justify-content: space-between;
+  .title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #0f7088;
+    &:before {
+      content: '';
+      margin-right: 10px;
+      display: inline-flex;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #0f7088;
+    }
+  }
+  .right-nav {
+    display: flex;
+    align-items: flex-end;
+    a {
+      padding: 0;
+      color: #000;
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      box-sizing: border-box;
+      margin-right: 10px;
+      &.router-link-exact-active {
+        font-weight: 600;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 }

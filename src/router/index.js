@@ -2,6 +2,8 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import About from "../views/About.vue";
+import Services from "../views/Services.vue";
+import Contact from "../views/Contact.vue";
 import Array from "../views/Array.vue";
 import Objects from "../views/Objects.vue";
 import Scss from "../views/Scss.vue";
@@ -24,9 +26,32 @@ const routes = [
   },
   {
     path: "/about",
-    name: "About",
-    component: About
+    component: About,
+    // beforeEnter: permissionGuard,
+    children: [
+      {
+        path: "/",
+        redirect: "services",
+        label: "services",
+        name: "about"
+      },
+      {
+        path: "services",
+        component: Services,
+        name: "all-services"
+      },
+      {
+        path: "contact",
+        component: Contact,
+        name: "contact-details"
+      }
+    ]
   },
+  // {
+  //   path: "/about",
+  //   name: "About",
+  //   component: About
+  // },
   {
     path: "/array",
     name: "Array",
