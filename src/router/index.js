@@ -8,7 +8,9 @@ import Array from "../views/Array.vue";
 import Objects from "../views/Objects.vue";
 import Scss from "../views/Scss.vue";
 import Flexbox from "../views/Flexbox.vue";
+import GitGithub from "../views/Git-Github.vue";
 import Git from "../views/Git.vue";
+import Github from "../views/Github.vue";
 import Jenkins from "../views/Jenkins.vue";
 import Vuejs from "../views/Vuejs.vue";
 import Javascript from "../views/Javascript.vue";
@@ -47,6 +49,29 @@ const routes = [
       }
     ]
   },
+  {
+    path: "/gitgithub",
+    component: GitGithub,
+    // beforeEnter: permissionGuard,
+    children: [
+      {
+        path: "/",
+        redirect: "git",
+        label: "git",
+        name: "git-github"
+      },
+      {
+        path: "git",
+        component: Git,
+        name: "git-details"
+      },
+      {
+        path: "github",
+        component: Github,
+        name: "github-details"
+      }
+    ]
+  },
   // {
   //   path: "/about",
   //   name: "About",
@@ -72,11 +97,28 @@ const routes = [
     name: "Flexbox",
     component: Flexbox
   },
-  {
-    path: "/git",
-    name: "Git",
-    component: Git
-  },
+  // {
+  //   path: "/git-github",
+  //   component: GitGithub,
+  //   children: [
+  //     {
+  //       path: "/",
+  //       redirect: "git",
+  //       label: "git",
+  //       name: "git-github-details"
+  //     },
+  //     {
+  //       path: "git",
+  //       component: "Git",
+  //       name: "git-details"
+  //     },
+  //     {
+  //       path: "github",
+  //       component: Github,
+  //       name: "github-details"
+  //     }
+  //   ]
+  // },
   {
     path: "/jenkins",
     name: "Jenkins",
