@@ -1,7 +1,7 @@
 <template>
   <div class="right-container">
     <div class="header">
-      <div class="title">Git - Github</div>
+      <div class="title">Git n Github</div>
       <div class="right-nav">
         <router-link to="git">Git</router-link>
         <router-link to="github">Github</router-link>

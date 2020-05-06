@@ -1,70 +1,155 @@
 <template>
   <div>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu
-      tincidunt elit. Ut vitae nisi et enim lacinia tincidunt. Aliquam erat
-      volutpat. Aliquam at augue in turpis luctus ultricies. Nunc vel magna
-      dignissim, posuere turpis vitae, eleifend metus. Nunc sodales gravida
-      viverra. Duis dui eros, dignissim vitae purus id, ornare pretium quam.
-      Curabitur ultricies, ligula at scelerisque vulputate, libero ex cursus
-      augue, porttitor facilisis nibh tellus eget sapien. Mauris et mollis mi.
-      Morbi sodales dolor eu sapien hendrerit, eget iaculis odio pretium.
-      Maecenas sed dapibus sapien. Curabitur ullamcorper cursus odio, non
-      sodales justo hendrerit in. Cras lacus tellus, maximus ut dui sed, varius
-      blandit tortor. Ut fringilla libero rhoncus luctus egestas. Pellentesque
-      consectetur finibus bibendum. Praesent eleifend quam eget leo congue
-      imperdiet.
-    </p>
+    <h1>Git</h1>
+    <ul>
+      <li>
+        Git is a revision control system, a tool to manage your source code
+        history.
+      </li>
+      <li>Git is the tool, GitHub is the service for projects that use Git.</li>
+    </ul>
+    <h1>Git Command</h1>
+    <ul>
+      <li>
+        This command sets the author name and email address respectively to be
+        used with your commits.
+        <pre>
+  <strong>git config</strong>
+  Usage: git config –global user.name “[name]”
+  Usage: git config –global user.email “[email address]”
+</pre>
+      </li>
+      <li>
+        This command is used to start a new repository.
+        <pre>
+        <strong>git init</strong>
+        Usage: git init [repository name]
+        initialized empty Git respository in [repository name]
+        </pre>
+      </li>
+      <li>
+        This command is used to obtain a repository from an existing URL.
+        <pre>
+        <strong>git clone</strong>
+        Usage: git clone [url]
+        Exp: git clone https://github.com/amitg2018/learning.git
+        </pre>
+      </li>
+      <li>
+        This command adds one or more files to the staging area.
+        <pre>
+        <strong>git add</strong>
+        Usage: git add [file]
+        Usage: git add .
+        </pre>
+      </li>
+      <li>
+        This command records or snapshots the file permanently in the version
+        history.
+        <pre>
+        <strong>git commit</strong>
+        Usage: git commit -m “Type in the commit message”
+        Usage: git commit -a
+        This command commits any files you’ve added with the git add command and also commits any files you’ve changed since then.
+        </pre>
+      </li>
+      <li>
+        This command shows the file differences which are not yet staged.
+        <pre>
+        <strong>git diff</strong>
+        Usage: git diff
+        Usage: git diff --staged
+        This command shows the differences between the files in the staging area and the latest version present.
+        Usage: git diff [first branch] [second branch]
+        This command shows the differences between the two branches mentioned.
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git reset</strong>
+        Usage: git reset [file]
+This command unstages the file, but it preserves the file contents.
+Exp: git reset site.css
 
-    <p>
-      Proin cursus felis dolor, et faucibus nisi scelerisque a. Etiam libero
-      justo, dignissim vel enim ornare, bibendum ultrices justo. Aliquam a
-      mollis dui, vitae mattis diam. Mauris efficitur mauris ante. Morbi
-      sollicitudin ipsum purus, in sollicitudin nisl sollicitudin sit amet.
-      Phasellus sed accumsan odio. Nam vel dui eget tortor ultrices faucibus.
-      Vivamus tincidunt, odio nec ullamcorper lacinia, sem eros dictum dolor, et
-      aliquam enim magna id arcu. Etiam blandit mi orci, vel sagittis ante
-      gravida eu. Donec cursus id lacus id venenatis.
-    </p>
+Usage: git reset [commit]
+This command undoes all the commits after the specified commit and preserves the changes locally.
+Exp: git reset e96a76b55e5860a27f195c466c4104821e87ac9a
 
-    <p>
-      Sed nisl risus, dignissim eu sodales nec, scelerisque eget elit.
-      Suspendisse sed tempor nunc. Ut suscipit libero in vulputate elementum. Ut
-      quis rhoncus lorem. Aenean pellentesque, felis eget laoreet pharetra,
-      lacus velit fermentum nisl, eget sollicitudin lacus metus molestie risus.
-      Duis imperdiet, erat at laoreet imperdiet, metus nisi pellentesque dolor,
-      et vulputate nisl nibh viverra sapien. Cras sem lorem, placerat nec purus
-      quis, ornare consectetur turpis. Suspendisse a risus sed odio aliquet
-      eleifend. Praesent condimentum, elit et tincidunt viverra, felis lorem
-      ultricies massa, ut ullamcorper nisl mi quis arcu. Cras a semper lorem.
-      Donec tortor nisl, mollis a faucibus non, cursus id tellus.
-    </p>
+Usage: git reset --hard [commit]
+This command discards all history and goes back to the specified commit.
+Exp: git reset e96a76b55e5860a27f195c466c4104821e87ac9a
 
-    <p>
-      Maecenas fermentum lorem ipsum, vel imperdiet odio consequat sit amet.
-      Phasellus felis neque, bibendum in ante eget, suscipit rutrum lorem.
-      Aliquam scelerisque, turpis eu pretium euismod, neque odio pretium dolor,
-      id imperdiet mi nisi sed sem. Duis non nisi sit amet dolor malesuada
-      feugiat at ut magna. Duis ultricies placerat elit, ut laoreet sapien
-      mattis vitae. Nunc in placerat nulla, vel ultrices ligula. Praesent at
-      mauris at dui dictum luctus eget sed velit. Morbi pellentesque, lacus eget
-      faucibus porta, neque est lacinia justo, vitae auctor dui tellus vel
-      lorem. Suspendisse consequat accumsan ligula. Nullam eget erat eleifend
-      erat blandit cursus. Aenean feugiat, lacus id tempus porta, nunc mauris
-      faucibus lectus, sit amet aliquam dui lacus ut eros. Praesent lobortis
-      nisl sed nunc suscipit, in mattis velit egestas.
-    </p>
-
-    <p>
-      Aenean rhoncus eget purus a semper. Sed auctor felis sed ultrices dictum.
-      Ut sed orci in libero rutrum aliquet ut quis nisi. Cras laoreet vitae est
-      sit amet mollis. Donec ipsum arcu, fringilla accumsan nisl convallis,
-      tincidunt posuere tellus. Pellentesque scelerisque, nibh ac malesuada
-      vehicula, nibh leo tristique sapien, vitae sollicitudin turpis nibh eget
-      elit. In aliquet ipsum quis nisl efficitur accumsan. Integer congue
-      feugiat ligula, commodo consequat lectus consectetur sed. Fusce sodales
-      erat nisl, ac sollicitudin tortor porta ut. Duis eu consectetur lectus.
-      Nulla et tortor ante.
-    </p>
+OR
+Usage: git reset --hard
+When you need revert merge branch   
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git status</strong>
+        Usage: git status
+This command lists all the files that have to be committed.  
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git rm</strong>
+        Usage: git rm [filename]
+This command deletes the file from your working directory and stages the deletion 
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git log</strong>
+        Usage: git log
+This command is used to list the version history for the current branch.
+        </pre>
+      </li>
+      <li>
+        <strong>sudo route flush</strong> - Reconnect VPN if Any problem with
+        connect VPN Route.
+      </li>
+      <li>git pull --rebase origin develop</li>
+      <li>Git —version ——— for checking git is installed or not</li>
+      <li>
+        Git clone “Repo Name” (https://github.com/amitg2018/Testing.git like
+        this)
+      </li>
+      <li>Git status —— Check status of current repo</li>
+      <li>Git checkout -b “Name of New Brach which you create”</li>
+      <li>Git checkout “branch” ———— call another branch.</li>
+      <li>Git add “file name” ——— Add File in branch.</li>
+      <li>Git add . —————— Add all files in branch</li>
+      <li>Git commit -m “write Msg for Commit ” —————— code Commit</li>
+      <li>Git push ———— push your code on branch</li>
+      <li>Git push origin “branch name”. ————— Push code on given branch.</li>
+      <li>Git pull origin “branch name” ————— pull code from given branch.</li>
+      <li>Git branch -- list ———— Check all Branches</li>
+      <li>Git branch -d “branch name” ———— Delete Branch if not required.</li>
+      <li>Git ls-files ———— Check all files in Repo.</li>
+      <li>Git rm “file name” ——— remove file from repo.</li>
+      <li>git mv "indexdev.html" "service.html" —————— Rename File name.</li>
+      <li>Git log ———— show All commit log.</li>
+      <li>
+        Git merge “branch name” ———— when you use this comment before you go
+        main master ( main server branch) branch then use this command.
+      </li>
+      <li>Git stash ———— remove all local files changes</li>
+      <li>Git stash pop ———— revert remove all local files changes</li>
+      <li>Cat “file name” ————— check what modify in file.</li>
+      <li>vi “new file with extension” ——— Create new file</li>
+      <li>
+        Esc + : + w + q ————— Save and Quit after modification and adding
+        anything.
+      </li>
+      <li>i ————— I button press when you write any thing created file.</li>
+      <li>Cherry pick</li>
+      <li>Rebase</li>
+      <li>Conflict</li>
+      <li>Merge</li>
+      <li>
+        http://www.askaswiss.com/2016/01/12-useful-advanced-git-commands.html
+      </li>
+    </ul>
   </div>
 </template>
