@@ -14,6 +14,14 @@
         Website for Write and check Regex: https://regexr.com/
         https://regex101.com https://regexpal.com Flags:
       </div>
+      <div class="details">
+        <strong>Imp Links</strong>
+        <p>https://www.guru99.com/interactive-javascript-tutorials.html</p>
+        <p>https://javascript.info/array</p>
+        <p>
+          https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+        </p>
+      </div>
     </div>
   </div>
 </template>

@@ -10,8 +10,8 @@
         <div id="nav">
           <router-link to="/">Home</router-link>
           <router-link to="/gitGithub">Git & Github</router-link>
-          <!-- <router-link to="/about">About</router-link>
           <router-link to="/array">Array</router-link>
+          <!-- <router-link to="/about">About</router-link>
           <router-link to="/objects">Objects</router-link>
           <router-link to="/scss">Scss</router-link>
           <router-link to="/flexbox">Flexbox</router-link>

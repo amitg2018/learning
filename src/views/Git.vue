@@ -3,8 +3,14 @@
     <h1>Git</h1>
     <ul>
       <li>
+        VCS = Version control system. SCM tools = Supply Chain Management. GPL=
+        General Public License, SHA = Secure Hash Function.
+        <br />
         Git is a revision control system, a tool to manage your source code
-        history.
+        history.<br />
+        https://www.edureka.co/blog/git-tutorial/
+        <br />
+        https://www.javatpoint.com/git ( v.imp)
       </li>
       <li>Git is the tool, GitHub is the service for projects that use Git.</li>
     </ul>
@@ -103,6 +109,325 @@ This command deletes the file from your working directory and stages the deletio
         <strong>git log</strong>
         Usage: git log
 This command is used to list the version history for the current branch.
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git show</strong>
+        Usage: git show [commitID]
+This command shows the metadata and content changes of the specified commit.
+Exp: git show 501eaa01c6af2c7ba1e2d83c66ae89f4dce8e20a
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git tag</strong>
+        Usage: git tag [commitID]
+This command is used to give tags to the specified commit..
+Exp: git tag 501eaa01c6af2c7ba1e2d83c66ae89f4dce8e20a
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git branch</strong>
+        Usage: git branch
+This command lists all the local branches in the current repository.
+
+Usage: git branch [branch name]
+This command creates a new branch.
+
+Usage: git branch -d [branch name]
+This command deletes the feature branch.
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git checkout</strong>
+        Usage: git checkout [branch name]
+This command is used to switch from one branch to another.
+
+Usage: git checkout -b [branch name]
+This command creates a new branch and also switches to it.
+
+Usage: git checkout .
+This Command Revert all your work before added and commited code.
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git merge</strong>
+        Usage: git merge [branch name]
+This command merges the specified branch’s history into the current branch.
+Exp: git merge develop
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git remote</strong>
+        Usage: git remote add [variable name] [Remote Server Link]
+This command is used to connect your local repository to the remote server.
+Exp: git remote origin https://github.com/ourproject/gitDemo.git
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git push</strong>
+       Usage: git push [variable name] master
+This command sends the committed changes of master branch to your remote repository.
+Exp: git push origin master
+
+Usage: git push [variable name] [branch]
+This command sends the branch commits to your local branch
+Exp: git push origin yourlocalbranch
+
+Usage: git push –-all [variable name]
+This command pushes all branches to your remote repository.
+Exp: git push --all origin 
+
+Usage: git push [variable name] :[branch name]
+This command deletes a branch on your remote repository.
+Exp: git push origin :branchName
+
+Usage: git push branchname –force
+The above command forces the push operation even if it results in a non-fast forward merge.
+
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git pull</strong>
+Usage:  git pull [Repository Link]
+This command fetches and merges changes on the remote server to your working directory.
+
+Usage: git pull
+Usage: git pull origin branchName
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git Stash</strong>
+        Usage: git stash save
+This command temporarily stores all the modified tracked files.
+
+Usage: git stash pop
+This command restores the most recently stashed files.
+
+Usage: git stash list
+This command lists all stashed changesets.
+
+Usage: git stash drop
+This command discards the most recently stashed changeset.
+
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git merge --strategy-option theirs</strong>
+        confilict  all coming changes in one command.
+        https://stackoverflow.com/questions/10697463/resolve-git-merge-conflicts-in-favor-of-their-changes-during-a-pull
+
+        After git merge, if you get conflicts and you want either your or their
+
+git checkout --theirs .
+git checkout --ours .
+
+
+https://github.com/joshnh/Git-Commands
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
+        </pre>
+      </li>
+      <li>
+        <pre>
+        <strong>git</strong>
         </pre>
       </li>
       <li>
