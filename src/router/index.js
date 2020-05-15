@@ -4,6 +4,7 @@ import Home from "../views/Home.vue";
 import About from "../views/About.vue";
 import Services from "../views/Services.vue";
 import Contact from "../views/Contact.vue";
+import VueLearn from "../views/VueLearn.vue";
 import Array from "../views/Array.vue";
 import Objects from "../views/Objects.vue";
 import Scss from "../views/Scss.vue";
@@ -46,6 +47,11 @@ const routes = [
         path: "contact",
         component: Contact,
         name: "contact-details"
+      },
+      {
+        path: "vue",
+        component: VueLearn,
+        name: "vue-learn"
       }
     ]
   },

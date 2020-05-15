@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h1>Git</h1>
+    <h1>{{ name }}</h1>
     <ul>
       <li>
-        VCS = Version control system. SCM tools = Supply Chain Management. GPL=
+        VCS = Version control system. SCM tools = source code management. GPL=
         General Public License, SHA = Secure Hash Function.
         <br />
         Git is a revision control system, a tool to manage your source code
@@ -21,8 +21,8 @@
         used with your commits.
         <pre>
   <strong>git config</strong>
-  Usage: git config –global user.name “[name]”
-  Usage: git config –global user.email “[email address]”
+  Usage: git config --global user.name “[name]”
+  Usage: git config --global user.email “[email address]”
 </pre>
       </li>
       <li>
@@ -478,3 +478,13 @@ https://github.com/joshnh/Git-Commands
     </ul>
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      name: "Git"
+    };
+  },
+  methods: {}
+};
+</script>
