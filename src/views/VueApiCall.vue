@@ -1,27 +1,6 @@
 <template>
   <div>
     <h1>{{ name }}</h1>
-    <!-- shortcut directive instead of v-bind:value = "email" -->
-    <input :value="email" />
-    <input v-model="email" />
-    {{ email }}
-    <!-- I want to create one form which one add every time email address push on our given div block -->
-
-    <!-- Show hide 1 -->
-    <div class="mar-t20" v-if="show">Hello Learner</div>
-    <div class="mar-t20" v-if="!show">Thanks Bro</div>
-    <!-- shortcut method instead of v-on:click="toggle" -->
-    <button @click="toggle">Show/hide- both from v-if</button>
-
-    <!-- Show Hide 2 -->
-    <div class="mar-t20" v-if="show">Hello Learner</div>
-    <div class="mar-t20" v-else>Thanks Bro</div>
-    <button @click.prevent="toggle">Show/hide v-if and else</button>
-
-    <!-- Show Hide 3  when we use v-show directive then block only display none and block but all data have in DOM so this is not useful for -->
-    <div class="mar-t20" v-show="show">Hello Learner</div>
-    <div class="mar-t20" v-cloak v-show="!show">Thanks Bro</div>
-    <button @click="toggle">Show/hide v-show</button>
     <!-- Img call from API -->
     <div
       class="mar-t20"
@@ -112,17 +91,11 @@
 </style>
 
 <script>
-// import { axios } from "@/plugins/axios";
 import axios from "axios";
 export default {
-  // component: {
-  //   axios
-  // },
   data() {
     return {
-      name: "Vue Learn",
-      email: "amit@gmail.com",
-      show: true,
+      name: "Vue API Call",
       imageData: [],
       contentData: []
       // imgSrc: "",

@@ -4,6 +4,7 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import "../src/assets/style/styles.scss";
+// Vue.prototype.$http = axios;
 
 Vue.config.productionTip = false;
 Vue.use(Element);

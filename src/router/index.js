@@ -14,6 +14,10 @@ import Git from "../views/Git.vue";
 import Github from "../views/Github.vue";
 import Jenkins from "../views/Jenkins.vue";
 import Vuejs from "../views/Vuejs.vue";
+import VueBasic from "../views/VueBasic.vue";
+import VueApiCall from "../views/VueApiCall.vue";
+import VueComponent from "../views/VueComponent.vue";
+
 import Javascript from "../views/Javascript.vue";
 import Html from "../views/Html.vue";
 import Css from "../views/Css.vue";
@@ -132,8 +136,30 @@ const routes = [
   },
   {
     path: "/vuejs",
-    name: "Vuejs",
-    component: Vuejs
+    component: Vuejs,
+    children: [
+      {
+        path: "/",
+        redirect: "vuebasic",
+        label: "vuebasic",
+        name: "Vuejs"
+      },
+      {
+        path: "vuebasic",
+        component: VueBasic,
+        name: "vue-basic"
+      },
+      {
+        path: "vueapicall",
+        component: VueApiCall,
+        name: "vue-api-call"
+      },
+      {
+        path: "vuecomponent",
+        component: VueComponent,
+        name: "vue-component"
+      }
+    ]
   },
   {
     path: "/javascript",
