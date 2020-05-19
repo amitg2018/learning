@@ -34,5 +34,9 @@
   height: 100%;
   width: 100%;
 }
+.router-link-active {
+  color: #000;
+  font-weight: 600;
+}
 </style>
 <style lang="scss" scoped></style>

@@ -12,8 +12,8 @@
       </h1>
       <p>{{ imageData.explanation }}</p>
       <img
-        v-if="imageData.hdurl && imageData.title"
-        :src="imageData.hdurl"
+        v-if="imageData.url && imageData.title"
+        :src="imageData.url"
         :title="imageData.title"
         style="max-width: 20%;"
       />
