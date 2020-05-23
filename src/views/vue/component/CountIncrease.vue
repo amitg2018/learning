@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-button :type="type" :size="size" @click.prevent="count++">
+    <el-button :type="type" :size="size" @click="counter()">
       Click {{ count }} times..
     </el-button>
   </div>
@@ -21,6 +21,11 @@ export default {
     return {
       count: 0
     };
+  },
+  methods: {
+    counter() {
+      return this.count++;
+    }
   }
 };
 </script>

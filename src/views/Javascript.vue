@@ -1,5 +1,4 @@
-<template>
-  <div class="about">
+<!-- <div class="about">
     <div class="header">Javascript</div>
     <div class="details-container">
       <h1>Regular Expressions</h1>
@@ -23,5 +22,54 @@
         </p>
       </div>
     </div>
+  </div> -->
+<template>
+  <div class="right-container">
+    <div class="header">
+      <div class="title">Javascript</div>
+      <div class="right-nav">
+        <router-link to="jsbasic">Basic</router-link>
+        <router-link to="jsregex">Regex</router-link>
+        <router-link to="jses6">ES6</router-link>
+      </div>
+    </div>
+    <div class="route-view-container">
+      <div class="main-view-area">
+        <!-- <router-view></router-view> -->
+        <div id="block"></div>
+      </div>
+    </div>
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {};
+  },
+  created: function() {
+    // this.createBlock();
+  },
+  methods: {
+    // some problem on this code how to create 45 div block inside block id with click event.
+    // createBlock: function() {
+    //   for (let i = 0; i < 45; i++) {
+    //     let div = document.createElement("div");
+    //     div.onclick = function() {
+    //       alert("you are click on #" + i);
+    //     };
+    //     document.getElementById("block").appendChild(div);
+    //   }
+    // }
+  }
+};
+</script>
+<style>
+#block > div {
+  background: cadetblue;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  padding: 0;
+  cursor: pointer;
+}
+</style>
