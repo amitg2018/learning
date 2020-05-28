@@ -1,18 +1,27 @@
 <template>
-  <div class="home">
-    <div class="header">
-      <img
-        alt="Vue logo"
-        src="../assets/images/logo.png"
-        style="max-width: 50px"
-      />
-      Home
+  <div>
+    <div class="right-container">
+      <div class="header">
+        <div class="title">Home</div>
+        <!-- <div class="right-nav">
+        <router-link to="services">Services</router-link>
+        <router-link to="contact">Contact</router-link>
+        <router-link to="vue">VueJs Learn</router-link> -->
+      </div>
     </div>
-
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
+    <div class="route-view-container">
+      <div class="main-view-area">
+        <!-- <router-view></router-view> -->
+        <img
+          alt="Vue logo"
+          src="../assets/images/logo.png"
+          style="max-width: 50px"
+        />
+        Home
+      </div>
+    </div>
   </div>
 </template>
-
 <script>
 // @ is an alias to /src
 // import HelloWorld from "@/components/HelloWorld.vue";

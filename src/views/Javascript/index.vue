@@ -28,15 +28,16 @@
     <div class="header">
       <div class="title">Javascript</div>
       <div class="right-nav">
-        <router-link to="jsbasic">Basic</router-link>
-        <router-link to="jsregex">Regex</router-link>
-        <router-link to="jses6">ES6</router-link>
+        <router-link to="basic">Basic</router-link>
+        <router-link to="array">Array</router-link>
+        <router-link to="object">Objects</router-link>
+        <router-link to="regex">Regex</router-link>
+        <router-link to="es6">ES6</router-link>
       </div>
     </div>
     <div class="route-view-container">
       <div class="main-view-area">
-        <!-- <router-view></router-view> -->
-        <div id="block"></div>
+        <router-view></router-view>
       </div>
     </div>
   </div>
