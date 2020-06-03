@@ -1,7 +1,8 @@
 <template>
   <div>
+    <div>{{ count }}</div>
     <el-button :type="type" :size="size" @click="counter()">
-      Click {{ count }} times..
+      Click {{ addNum }} times..
     </el-button>
   </div>
 </template>
@@ -15,6 +16,10 @@ export default {
     size: {
       type: String,
       default: "mini"
+    },
+    addNum: {
+      type: Number,
+      default: 1
     }
   },
   data() {
@@ -24,7 +29,7 @@ export default {
   },
   methods: {
     counter() {
-      return this.count++;
+      this.count += this.addNum;
     }
   }
 };

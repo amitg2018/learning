@@ -4,7 +4,6 @@ import Home from "../views/Home.vue";
 import About from "../views/About.vue";
 import Services from "../views/Services.vue";
 import Contact from "../views/Contact.vue";
-import VueLearn from "../views/vue/VueLearn.vue";
 
 import Jenkins from "../views/Jenkins.vue";
 
@@ -13,6 +12,7 @@ import VueBasic from "../views/VueJs/views/VueBasic.vue";
 import VueApiCall from "../views/VueJs/views/VueApiCall.vue";
 import VueComponent from "../views/VueJs/views/VueComponent.vue";
 import VueX from "../views/VueJs/views/VueX.vue";
+import VueLearn from "../views/VueJs/views/VueLearn.vue";
 
 import Javascript from "../views/Javascript/index.vue";
 import JavascriptBasic from "../views/Javascript/views/JavascriptBasic.vue";

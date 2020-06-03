@@ -20,7 +20,12 @@
       </li>
     </div>
 
-    <count-increase type="default" size="mini" style="margin-bottom: 5px;" />
+    <count-increase
+      type="default"
+      size="mini"
+      :addNum="2"
+      style="margin-bottom: 5px;"
+    />
     <count-increase type="primary" size="small" style="margin-bottom: 5px;" />
     <count-increase type="success" size="large" style="margin-bottom: 5px;" />
     <div style="margin-top: 50px; margin-bottom: 50px;">

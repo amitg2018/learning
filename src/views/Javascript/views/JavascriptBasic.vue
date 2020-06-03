@@ -1,6 +1,11 @@
 <template>
   <div>
     <h1>{{ name }}</h1>
+    <img
+      alt="Vue logo"
+      src="../../../assets/images/logo.png"
+      style="max-width: 50px"
+    />
   </div>
 </template>
 <style lang="scss" scoped>
@@ -13,8 +18,9 @@
 export default {
   data() {
     return {
-      name: "Basic"
+      name: "Javascript Basic"
     };
-  }
+  },
+  methods: {}
 };
 </script>
