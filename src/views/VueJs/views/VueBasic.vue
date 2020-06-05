@@ -30,6 +30,22 @@
           </li>
         </ul>
       </div>
+      <!-- 
+        Challenge portion:
+        Add a color property to each note that allows you to sort notes according to color.
+        Add a priority number to each note, that allows you to rank the priority of notes.
+        Use "https://www.npmjs.com/package/sfcookies" this package for cookies in order to keep a history of notes through browser cookies. This way, if a user refreshes the app, they will find notes that they previously stored. 
+      -->
+      <!-- 
+       Web Requests: 
+        Let’s take some time to go over web requests. On the web, companies and organizations store large databases of information. They have lists of users, collections of folders, and massive troves of files. Some companies allow developers to interact with that information with web requests and APIs.
+
+        These APIs allow for all different types of web requests, including GET, POST, HEAD, DELETE, and more. Most often, you’ll use the GET and POST web requests.
+
+        GET allows you to receive information from the API based on specific parameters.
+
+        POST sends data to the API for the company to work with.
+       -->
     </div>
     <!-- Second -->
 
