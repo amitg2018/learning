@@ -6,6 +6,16 @@
       src="../../../assets/images/logo.png"
       style="max-width: 50px"
     />
+    <div>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/9M4XKi25I2M"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
   </div>
 </template>
 <style lang="scss" scoped>
